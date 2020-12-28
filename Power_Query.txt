@@ -1,0 +1,3 @@
+# Power Query possui uma grande quantidade de conectores para importar e extrair dados de diversos tipo de arquivos e fonte de dados.
+
+# Possui detecção automática do tipo de dados, e diversos tipos de dados para alteração e formatação.
