@@ -5,3 +5,5 @@
 # Possui funcionalidade de criar colunas personalizadas, através de valores de outras colunas.
 
 # Possui funcionalidade de Substituição de valores por coluna ou por mais de uma coluna.
+
+# Possui funcionalidade de duplicar uma coluna, dividir e extrair valores de uma coluna.
