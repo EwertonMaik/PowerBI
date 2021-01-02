@@ -1,3 +1,7 @@
 # Power Query possui uma grande quantidade de conectores para importar e extrair dados de diversos tipo de arquivos e fonte de dados.
 
 # Possui detecção automática do tipo de dados, e diversos tipos de dados para alteração e formatação.
+
+# Possui funcionalidade de criar colunas personalizadas, através de valores de outras colunas.
+
+# Possui funcionalidade de Substituição de valores por coluna ou por mais de uma coluna.
