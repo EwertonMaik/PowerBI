@@ -7,3 +7,5 @@
 # Possui funcionalidade de Substituição de valores por coluna ou por mais de uma coluna.
 
 # Possui funcionalidade de duplicar uma coluna, dividir e extrair valores de uma coluna.
+
+# Possui funcionalidade de extrair de um campo data as informações de Ano / Mês / Semana / Dia / Trimestre / Entre outros.
