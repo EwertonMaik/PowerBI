@@ -9,3 +9,7 @@
 # Possui funcionalidade de duplicar uma coluna, dividir e extrair valores de uma coluna.
 
 # Possui funcionalidade de extrair de um campo data as informações de Ano / Mês / Semana / Dia / Trimestre / Entre outros.
+
+# Possui funcionalidade de excluír linhas em branco, duplicadas. Transformar Colunas em Linhas.
+
+# Possui funcionalidade de preenchimento de linhas, com o valor da celula anterior.
