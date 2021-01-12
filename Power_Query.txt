@@ -13,3 +13,5 @@
 # Possui funcionalidade de excluír linhas em branco, duplicadas. Transformar Colunas em Linhas.
 
 # Possui funcionalidade de preenchimento de linhas, com o valor da celula anterior.
+
+# Possui funcionalidade de mesclar diversas tabelas em apenas uma.
