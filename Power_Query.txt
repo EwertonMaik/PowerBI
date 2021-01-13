@@ -15,3 +15,5 @@
 # Possui funcionalidade de preenchimento de linhas, com o valor da celula anterior.
 
 # Possui funcionalidade de mesclar diversas tabelas em apenas uma.
+
+# Possui funcionalidade de atualizar os parâmetros de caminhos das fontes de dados(Gerenciar Parâmetro). Podendo alteração manualmente em único local para todos, ou individualmente para cada arquivo. 
