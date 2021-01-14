@@ -19,3 +19,5 @@
 # Possui funcionalidade de atualizar os parâmetros de caminhos das fontes de dados(Gerenciar Parâmetro). Podendo alteração manualmente em único local para todos, ou individualmente para cada arquivo. 
 
 # Possui funcionalidade de importar uma pasta com todas as suas fontes de dados, não necessitando importar uma a uma. Muito bem utilizado para combinar os registros de diversas fontes em um único.
+
+# Possui funcionalidade unir e criar uma tabela de fontes de dados diferentes, e depois mesclar colunas de outras fontes de dados na tabela criada.
