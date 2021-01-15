@@ -21,3 +21,7 @@
 # Possui funcionalidade de importar uma pasta com todas as suas fontes de dados, não necessitando importar uma a uma. Muito bem utilizado para combinar os registros de diversas fontes em um único.
 
 # Possui funcionalidade unir e criar uma tabela de fontes de dados diferentes, e depois mesclar colunas de outras fontes de dados na tabela criada.
+
+# Possui funcionalidade de criar uma tabela a partir da outra por referência, diferente do caso criar uma tabela por duplica-la, tornando dois objetos independentes.
+
+# Possui funcionalidade
