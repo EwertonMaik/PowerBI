@@ -30,4 +30,6 @@
 
 # Possui funcionalidade que permite criar diretórios para agrupar e organizar as tabelas criadas e importadas das fontes de dados.
 
-# Possui funcionalidade que identifica o relacionamento automático das chaves / tabelas. Podendo ser editadas e exluidas manualmente.
+# Possui funcionalidade que identifica o relacionamento automático das chaves / tabelas. Podendo ser editadas e exluidas manualmente. O nome dos campos referente as chaves devem estar iguais para reconhecerem automaticamente. (Muito utilizado no relacionamento das tabelas FATOS e DIMENSÃO - Modelos STAR SCHEMA ou SNOW FLAKE)
+
+#
