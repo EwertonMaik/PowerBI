@@ -24,4 +24,6 @@
 
 # Possui funcionalidade de criar uma tabela a partir da outra por referência, diferente do caso criar uma tabela por duplica-la, tornando dois objetos independentes.
 
-# Possui funcionalidade de importar uma arquivo .txt segmentado, onde em um único arquivo possui os registros de mais de uma tabela, e o Power Query possibilita ema importação e transformação, separando e criando cada tabela.
+# Possui funcionalidade de importar uma arquivo .txt segmentado, onde em um único arquivo possui os registros de mais de uma tabela, e o Power Query possibilita ema importação e transformação, separando e criando cada tabela de uma única fonte de dados.
+
+# Possui funcionalidade de criar uma coluna nova condicional, baseado em condições SE e SENÃO juntamente com operadores e valores.
