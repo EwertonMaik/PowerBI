@@ -27,3 +27,7 @@
 # Possui funcionalidade de importar uma arquivo .txt segmentado, onde em um único arquivo possui os registros de mais de uma tabela, e o Power Query possibilita ema importação e transformação, separando e criando cada tabela de uma única fonte de dados.
 
 # Possui funcionalidade de criar uma coluna nova condicional, baseado em condições SE e SENÃO juntamente com operadores e valores.
+
+# Possui funcionalidade que permite criar diretórios para agrupar e organizar as tabelas criadas e importadas das fontes de dados.
+
+# Possui funcionalidade que identifica o relacionamento automático das chaves / tabelas. Podendo ser editadas e exluidas manualmente.
