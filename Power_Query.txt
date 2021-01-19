@@ -37,3 +37,7 @@
 # Possui funcionalidade de criar coluna calculada, OBS - suas informações são guardadas no arquivo salvo PBIX - PowerBI, ocupando espaço e memória do computador. Já uma coluna de medida, não é armazenada fisicamente no computador, e sim virtualmente executada pelo processador, sendo mais performatica.
 
 # Possui funcionalidade de criar grupos para agrupar as colunas de uma tabela, na visualização modelo e vista na visualização relatório.
+
+# Possui funcionalidade de web scraping - coletadar dados de páginas web. Em adicionar novas fontes de dados, existe a opção de WEB, onde pode ser passado um endereço link. O PowerBi irá varer o endereço e listar os dados em tabelas a serem carregados ou transformados no Power Query.
+
+# Possui funcionalidade de categorização de dados, como exemplo, marcar um campo como tipo país, para ser reconhecido na geolocalição de um objeto Mapa.
