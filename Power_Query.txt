@@ -40,4 +40,6 @@
 
 # Possui funcionalidade de web scraping - coletadar dados de páginas web. Em adicionar novas fontes de dados, existe a opção de WEB, onde pode ser passado um endereço link. O PowerBi irá varer o endereço e listar os dados em tabelas a serem carregados ou transformados no Power Query.
 
+# Possui a funcionalidade descrita na linha anterior, web scraping, pode ser usanda com a opçãp de IA, voce digita e informa as colunas e linhas que deseja da página, e a ferramenta entende e autocompleta o restante das linhas.
+
 # Possui funcionalidade de categorização de dados, como exemplo, marcar um campo como tipo país, para ser reconhecido na geolocalição de um objeto Mapa.
