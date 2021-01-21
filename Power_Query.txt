@@ -45,3 +45,8 @@
 # Possui funcionalidade de categorização de dados, como exemplo, marcar um campo como tipo país, para ser reconhecido na geolocalição de um objeto Mapa.
 
 # Possui funcionalidade de inportar fonte de dados através de diretórios / pastas do SharePoint.
+
+# Possui funcionalidade de importar fonde de dados / planilhas do Google Driver - Google Sheets
+
+# Possui funcionalidade de importar fonde de dados / planilhas do One Driver - SharePoint
+
