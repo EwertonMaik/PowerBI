@@ -49,4 +49,3 @@
 # Possui funcionalidade de importar fonde de dados / planilhas do Google Driver - Google Sheets
 
 # Possui funcionalidade de importar fonde de dados / planilhas do One Driver - SharePoint
-
