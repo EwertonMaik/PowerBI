@@ -46,6 +46,10 @@
 
 # Possui funcionalidade de inportar fonte de dados através de diretórios / pastas do SharePoint.
 
-# Possui funcionalidade de importar fonde de dados / planilhas do Google Driver - Google Sheets
+# Possui funcionalidade de importar fonte de dados / planilhas do Google Driver - Google Sheets
 
-# Possui funcionalidade de importar fonde de dados / planilhas do One Driver - SharePoint
+# Possui funcionalidade de importar fonte de dados / planilhas do One Driver - SharePoint
+
+# Possui funcionalidade de criar Chaves Artificiais SK - Surrogate Keys, justamente para poder relacionar tabelas e identificar registros. E apos criar essas chaves, pode-se realizar a operação de mescar os registros de uma tabela com outra e fazendo-a a receber o ID da chave que fora gerado. As tabelas precisam estar bem modeladas e estruturadas tanto no modelo Star schema ou Snow Flake, para que a apresentação dos dados estejam conectados um com o outro.
+
+# 
