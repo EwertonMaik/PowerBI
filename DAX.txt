@@ -1,3 +1,17 @@
 # DAX - Data Analysis Expressions - Coleções de funções, operadores e constamntes usados em formulas e expressões.
 
 # Possuem funções de Agregação, Contagem, Lógicas, Informações, Texto, Datas e Inteligência de Tempo.
+
+# Podem ser usadas em colunas ou métricas.
+
+# Colunas consomem memória e Métricas consomem CPU.
+
+# Tabelas com nome composto e espaços, deve estar entre ASPAS SIMPLES ' '. Quando não houver espaço, não é necessario ASPAS.
+
+# O nome das colunas sempre utilizar COLCHETES.
+
+# Operadores Matemáticos Utilizados +, -, *, /, ^, &
+
+# Operadores de Comparação =, <, >, <=, >=, <>
+
+# Operadores Lógicos &&, ||, IN
