@@ -1,1 +1,3 @@
 # DAX - Data Analysis Expressions - Coleções de funções, operadores e constamntes usados em formulas e expressões.
+
+# Possuem funções de Agregação, Contagem, Lógicas, Informações, Texto, Datas e Inteligência de Tempo.
