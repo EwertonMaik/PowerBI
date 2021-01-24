@@ -15,3 +15,9 @@
 # Operadores de Comparação =, <, >, <=, >=, <>
 
 # Operadores Lógicos &&, ||, IN
+
+# Medidas são usadas para várais análises de dados; somas, médias, valores mínimos ou máximos, contagens ou cálculos mais avançados.
+
+# Contexto de Linha - operações aplicadas em linhas para determinado cálculo.
+
+# Contexto de Filtros - Utilizado pelas medidas, ao aplicar filtro em uma ou mais tabelas.
