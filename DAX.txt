@@ -1,0 +1,1 @@
+# DAX - Data Analysis Expressions - Coleções de funções, operadores e constamntes usados em formulas e expressões.
