@@ -1,6 +1,24 @@
 # DAX - Data Analysis Expressions - Coleções de funções, operadores e constantes usados em formulas e expressões.
 
 # Possuem funções de Agregação, Contagem, Lógicas, Informações, Texto, Datas e Inteligência de Tempo.
+SUM =SUM(Coluna) - Soma de Números ou Colunas
+AVERAGE =AVERAGE(Coluna) - Cálcula a média de números ou colunas
+MAX =MAX(Coluna) - Calcula maior valor de uma lista ou coluna
+MIN =MIN(Coluna) - Calcula menor valor de uma lista ou coluna
+
+Funções de Agregação Iterativas
+
+SUMX = SUMX(Tabela; Expressão)
+AVERAGEX = AVERAGEX(Tabela; Expressão)
+MAXX = MAXX(Tabela; Expressão)
+MINX = MINX(Tabela; Expressão)
+COUNTX = COUNTX(Tabela; Expressão)
+
+COUNT - =COUNT(Coluna) - Conta quantos números tem em uma coluna
+COUNTA - =COUNTA(Coluna) - Conta quantos valores tem em uma coluna
+COUNTBLANK - =COUNTBLANK(Coluna) - Conta quantos valores vazio tem em uma coluna
+COUNTROWS - =COUNTROWS(Coluna) - Conta quantas linhas tem em uma coluna
+DISTINCTCOUNT - =DISTINCTCOUNT(Coluna) - Conta quantos itens diferentes tem uma coluna
 
 # Podem ser usadas em colunas ou métricas.
 
