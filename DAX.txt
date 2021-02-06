@@ -20,6 +20,8 @@ COUNTBLANK - =COUNTBLANK(Coluna) - Conta quantos valores vazio tem em uma coluna
 COUNTROWS - =COUNTROWS(Coluna) - Conta quantas linhas tem em uma coluna
 DISTINCTCOUNT - =DISTINCTCOUNT(Coluna) - Conta quantos itens diferentes tem uma coluna
 
+# O PowerBI permite a reutilização de métricas e medidas, dando agilidade 
+
 # Podem ser usadas em colunas ou métricas.
 
 # Colunas consomem memória e Métricas consomem CPU.
