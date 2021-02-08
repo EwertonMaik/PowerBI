@@ -20,6 +20,24 @@ COUNTBLANK - =COUNTBLANK(Coluna) - Conta quantos valores vazio tem em uma coluna
 COUNTROWS - =COUNTROWS(Coluna) - Conta quantas linhas tem em uma coluna
 DISTINCTCOUNT - =DISTINCTCOUNT(Coluna) - Conta quantos itens diferentes tem uma coluna
 
+Funções de Data
+DAY - DAY(coluna)
+MONTH - MONTH(coluna)
+YEAR - =YEAR(coluna)
+TODAY - =TODAY()
+WEEKDAY - =WEEKDAY(Coluna:[Tipo])
+WEEKNUM - =WEEKNUM(Coluna:[Tipo])
+HOUR - =HOUR(coluna)
+MINUTE - =MINUTE(coluna)
+SECOND - =SECOND(coluna)
+NOW - =NOW()
+DATEDIFF =DATEDIFF(DTVendas;DTVenct;Tipo) - Diferença entre uma data e outra, aceita varios argumentos.
+
+1 D_CALENDARIO = CALENDAR(MIN(Fato_venda[Dt_Venda]);MAX(Fato_venda[Dt_Venda]) -- Criando uma tabela com uma coluna que pega a data minima e data maxima da tabela / campo informado
+1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mmm") -- Criando uma coluna com Nome do mês abreviado
+1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mm") -- Criando uma coluna com Número do mês
+1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mmmm") -- Criando uma coluna com Nome do mês Completo
+
 # O PowerBI permite a reutilização de métricas e medidas, dando agilidade 
 
 # Podem ser usadas em colunas ou métricas.
