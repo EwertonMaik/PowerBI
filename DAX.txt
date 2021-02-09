@@ -37,6 +37,15 @@ DATEDIFF =DATEDIFF(DTVendas;DTVenct;Tipo) - Diferença entre uma data e outra, a
 1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mmm") -- Criando uma coluna com Nome do mês abreviado
 1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mm") -- Criando uma coluna com Número do mês
 1 Mes Abrev = FORMAT(D_CALENDARIO[Data_ref];"mmmm") -- Criando uma coluna com Nome do mês Completo
+Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mmm/yyyy') -- Criando coluna personalizada de mês descrito abreviado / ano número
+Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mm/yyyy') -- Criando coluna personalizada de mês número/ ano número
+Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mmmm/yyyy') -- Criando coluna personalizada de mês descrito por extenso ano número
+1 Quarter = OFRMAT(D_CALENDARIO[Data_ref];"Q")& "º Trim" -- Criando uma coluna de Quarter
+1 Sem = IF(D_CALENDARIO[mes]<=6; "1º Sem"; "2º Sem") -- Criando coluna calculada para semestre
+1 Dia Semana Ext = FORMAT(D_CALENDARIO[Data_ref]; "ddd") -- Criando coluna dos dias da semana por extenso abreviado
+2 Dia Semana Ext = FORMAT(D_CALENDARIO[Data_ref]; "dddd") --Criando coluna dos dias da semana por extenso completo
+
+# O PowerBI permite a ordenação dos dados de calendário de forma crescente e descresente para dia, mês, ano e demais classificação de datas.
 
 # O PowerBI permite a reutilização de métricas e medidas, dando agilidade 
 
