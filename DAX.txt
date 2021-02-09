@@ -44,6 +44,12 @@ Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mmmm/yyyy') -- Criando coluna personal
 1 Sem = IF(D_CALENDARIO[mes]<=6; "1º Sem"; "2º Sem") -- Criando coluna calculada para semestre
 1 Dia Semana Ext = FORMAT(D_CALENDARIO[Data_ref]; "ddd") -- Criando coluna dos dias da semana por extenso abreviado
 2 Dia Semana Ext = FORMAT(D_CALENDARIO[Data_ref]; "dddd") --Criando coluna dos dias da semana por extenso completo
+1 Idade -DATEDIFF(PESSOAS[Nascimento];TODAY();YEAR) -- Criando culuna para calcular idade das pessoas por ANO
+2 Idade -DATEDIFF(PESSOAS[Nascimento];TODAY();DAY) -- Criando culuna para calcular idade das pessoas por DIAS
+1 Idade -DATEDIFF(PESSOAS[Nascimento];TODAY();MONTH) -- Criando culuna para calcular idade das pessoas por MÊS
+É possivel por HOUR / MINUTE / QUARTER / SECOND / WEEK
+
+# PorwerBI permite criar uma Hierarquia de datas automaticamente e manualmente, adicionando uma data, e as demais variações de colunas criadas para esta data, como dia, mês, trimestre, semestre.
 
 # O PowerBI permite a ordenação dos dados de calendário de forma crescente e descresente para dia, mês, ano e demais classificação de datas.
 
