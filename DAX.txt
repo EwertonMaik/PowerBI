@@ -84,3 +84,8 @@ OR - OR(FVendas[Preco] < 20000, FVendas[Desconto] > 500)
 TRUE - TRUE()
 FALSE - FALSE()
 SWITCH(<espression>, <value>, <result> [,<value>, <result>]... [,<else>])
+
+
+Media = DIVIDE(Alunos_notas[P1] + Alunos_notas[P2]; 2; 0)
+Media = IFERROR((Alunos_notas[P1] + Alunos_notas[P2]) / 2; 0)
+Media = (Alunos_notas[P1] + Alunos_notas[P2]) / 2
