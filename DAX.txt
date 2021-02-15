@@ -74,3 +74,13 @@ Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mmmm/yyyy') -- Criando coluna personal
 # Contexto de Linha - operações aplicadas em linhas para determinado cálculo.
 
 # Contexto de Filtros - Utilizado pelas medidas, ao aplicar filtro em uma ou mais tabelas.
+
+
+## Funções DAX Lógicas
+IF - IF(Vendas[Desconto] > 0; "Com Desc.", "Sem Desc" )
+IFERROR - IFERROR(Fvendas[Preco] / Fvendas[Qtd], 0 ) - Trata um erro, substituindo o erro por um valor
+AND - AND(FVendas[Preco] > 20000, Fvendas[Desconto], Anual < 500)
+OR - OR(FVendas[Preco] < 20000, FVendas[Desconto] > 500)
+TRUE - TRUE()
+FALSE - FALSE()
+SWITCH(<espression>, <value>, <result> [,<value>, <result>]... [,<else>])
