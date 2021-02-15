@@ -1,0 +1,9 @@
+DAX - Data Analysis Expressions utilizando Funções de Intelig~encia de Tempo
+
+SAMEPERIODLASTYEAR - CALCULATE(SUM(FVendas[Total Venda]); SAMEPERIODLASTYEAR(d_data[Date]))
+LASTDATE - =LASTDATE(DATA_REF) -- Última data
+DATESINPERIOD - =CALCULATE(Medidas[M Vendas Validas]; DATESINPERIOD(D_TEMPO_OFC[Data_ref]; LASTDATE(D_TEMPO_OFC[Data_ref]); - 12; MONTH ) ) --
+NEXMONTH - CALCULATE(SUM(FVendas[Total Venda]); NEXTMONTH(d_data[Date]) ) -- Proximo Mês
+NEXTDAY - CALCULATE(SUM(FVendas[Total Venda]); NEXTDAY(d_data[Date])) -- Proximo dia
+PREVIUSMONTH - CALCULATE(SUM(FVendas[Total Venda]); PREVIOUSTMONTH(d_data[Date]) ) -- Mês anterior
+PREVIUSDAY - CALCULATE(SUM(FVendas[Total Venda]); PREVIOUSDAY(d_data[Date])) -- Dia anterior
