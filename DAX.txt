@@ -108,3 +108,13 @@ Tipo de Bolsa = SWITCH (
 						('Bolsa Estudo'[Idade] >= 16 || 'Bolsa estudo'[Média Notas] >= 9 || 'Bolsa Estudo'[Frêquencia] >= 90); "Bolsa Parcial";
 						"Não Tem"
 						)
+
+Bonus1 = IF (
+	AND(Bonus[Tempo(ano)] >= 4; Bonus[Desempenho] = "Bom"); "Elegivel"; "Não Elegivel"
+)
+
+Bonus2 = SWITCH (
+	TRUE();
+	//(Bonus[Tempo(ano)] >= 4 && Bonus[Desempenho] = "Bom"); "Elegivel"; -- Usando (&&) que é a mesma coisa que AND
+	AND(Bonus[Tempo(ano)] >= 4; Bonus[Desempenho] = "Bom"); "Elegivel";
+)
