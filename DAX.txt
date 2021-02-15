@@ -100,3 +100,11 @@ Performance = SWITCH( TRUE();
                       Alunos_notas[Media3] >= 2,5; "Ruim";
                       "Pessimo"
                       )
+
+
+Tipo de Bolsa = SWITCH (
+						TRUE();
+						('Bolsa Estudo'[Idade] >= 16 && 'Bolsa Estudo'[Média Notas] >= 9 && 'Bolsa Estudo'[Frêquencia] >= 90); "Bolsa Completa";
+						('Bolsa Estudo'[Idade] >= 16 || 'Bolsa estudo'[Média Notas] >= 9 || 'Bolsa Estudo'[Frêquencia] >= 90); "Bolsa Parcial";
+						"Não Tem"
+						)
