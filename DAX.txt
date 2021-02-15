@@ -118,3 +118,6 @@ Bonus2 = SWITCH (
 	//(Bonus[Tempo(ano)] >= 4 && Bonus[Desempenho] = "Bom"); "Elegivel"; -- Usando (&&) que é a mesma coisa que AND
 	AND(Bonus[Tempo(ano)] >= 4; Bonus[Desempenho] = "Bom"); "Elegivel";
 )
+
+
+## Funções DAX Contexto de Linha - Filtros
