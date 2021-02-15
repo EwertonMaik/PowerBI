@@ -85,7 +85,18 @@ TRUE - TRUE()
 FALSE - FALSE()
 SWITCH(<espression>, <value>, <result> [,<value>, <result>]... [,<else>])
 
-
 Media = DIVIDE(Alunos_notas[P1] + Alunos_notas[P2]; 2; 0)
 Media = IFERROR((Alunos_notas[P1] + Alunos_notas[P2]) / 2; 0)
 Media = (Alunos_notas[P1] + Alunos_notas[P2]) / 2
+
+situacao = IF(Alunos_notas[Media3] >= 6; "Aprovado"; "Reprovado")
+Idicador = IF(Alunos_notas[Media3] >= 6; "(inserir emoj)"; "inserir emoj") -- Pressionando a tecla (Windows) + (Ponto) aparece teclado virtual de EMOJ
+Regra = SWITCH( TRUE(); Alunos_notas[Media3] >= 7; "Aprovado"; Alunos_notas[Media3] >= 5; "Recuperação"; "Reprovado")
+Performance = SWITCH( TRUE();
+                      Alunos_notas[Media3] >= 9,5; "Excelente";
+                      Alunos_notas[Media3] >= 8,5; "Otimo";
+                      Alunos_notas[Media3] >= 7; "Bom";
+                      Alunos_notas[Media3] >= 5; "Regular";
+                      Alunos_notas[Media3] >= 2,5; "Ruim";
+                      "Pessimo"
+                      )
