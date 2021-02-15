@@ -121,3 +121,28 @@ Bonus2 = SWITCH (
 
 
 ## Funções DAX Contexto de Linha - Filtros
+
+M Total Vendas = SUMX(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit] )-- Exemplo de Função Agregação Iterativa, porém sem filtro
+M Vendas Validas =CALCULATE(sumx(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]); Fato_venda[Situacao] = "N") -- Com Filtro por Linha
+M Vendas Cancel =CALCULATE(sumx(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]); Fato_venda[Situacao] = "C") -- Com Filtro por Linha
+
+Funções de Filtros
+=CALCULATE(SUM(FVendas[Qtd]); FVendas[Situacao] = "N" ) -- Calcula uma expressão com um filtro 
+=FILTER(Fvendas; Fvendas[Situacao] = "N") -- Filtra uma tabela com varios critérios
+=ALL(FVendas) -- Exclui qualquer filtro de uma coluna
+ALLSELECTED(FVendas) -- Remove filtros de contexto de colunas e linhas na consulta atual
+
+00 Venda Geral = CALCULE(SUMX(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]))
+01 Vendas Valid = CALCULATE(SUMX(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]); Fato_venda[Situacao] = "N" )
+01 Vendas Velid = CALCULATE([00 Vendas Geral]; Fato_venda[Situacao] = "N") -- Reutilizando a medida utilizada em 00 Venda Geral
+02 Vendas Cancel = CALCULATE([00 Vendas Geral]; Fato_venda[Situacao] = "C") -- Reutilizando a medida utilizada em 00 Venda Geral
+03 Vendas ALL = CALCULATE([01 Vendas Valid]; ALL(Fato_venda) )
+04 % Partic = DIVIDE([01 Vendas Valid]; [03 Vendas ALL] )
+05 Vendas ALLSELECTED = CALCULATE([01 Vendas Valid]; ALLSELECTED(Fato_venda) )
+06 Vendas C/ Vnd = CALCULATE([01 Vendas Valid]; Fato_venda[Cod_Vend] <> BLANK() )
+06 Vendas C/ Vnd = CALCULATE(SUMX(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]); Fato_venda[Situacao] = "N"; Fato_venda[Cod_Vend] <> BLANK() )
+06 Vendas C/ Vnd = CALCULATE(SUMX(Fato_venda; Fato_venda[Qtde] * Fato_venda[Pr_Unit]);
+								FILTER(Fato_venda;
+									Fato_venda[Situacao] = "N" && Fato_venda[Cod_Vend] <> BLANK()
+								)
+							)
