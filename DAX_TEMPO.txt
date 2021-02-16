@@ -26,3 +26,10 @@ YOY - YEAR OVER YEAR - Ano sobre Ano
 								DATESINPERIOD(D_CALENDARIO[Data_ref];
 								LASTDATE(D_CALENDARIO[Data_ref]; -6; MONTH ) )
 							)
+							
+-- Nesta medida, é utilizado o parâmetro dinâmico criado - P_MES_ACUM em MODELAGEM / NOVO PARÂMETRO
+-- E este parâmetro é substituído pelo valor do mês que era fixo na medida.
+23 Val Acum D = CALCULATE([01 Vendas Valid];
+								DATESINPERIOD(D_CALENDARIO[Data_ref];
+								LASTDATE(D_CALENDARIO[Data_ref]; P_MES_ACUM[P_MES_ACUM Valor] * -1; MONTH ) )
+							)
