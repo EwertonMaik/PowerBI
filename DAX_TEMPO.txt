@@ -14,3 +14,15 @@ YOY - YEAR OVER YEAR - Ano sobre Ano
 17 VAL YOY = CALCULATE([01 Vendas Valid]; SAMEPERIODLASTYEAR(D_CALENDARIO[Data_ref]) )
 19 VAL MON = CALCULATE([01 Vendas Valid]; PREVIOUSMONTH(D_CALENDARIO[Data_ref]) ) -- Mês anterior
 20 VAL MES SEGUINTE = CALCULATE([01 Vendas Valid]; NEXTMONTH(D_CALENDARIO[Data_ref]) ) -- Mês Seguinte
+
+-- Valor de Periodo Acumulado de 12 Meses
+21 Val Acum 12 M = CALCULATE([01 Vendas Valid]; 
+								DATESINPERIOD(D_CALENDARIO[Data_ref];
+								LASTDATE(D_CALENDARIO[Data_ref]); -12; MONTH )
+							)
+
+-- Valor de Periodo Acumulado de 6 Meses
+22 Val Acum 6 M = CALCULATE([01 Vendas Valid0];
+								DATESINPERIOD(D_CALENDARIO[Data_ref];
+								LASTDATE(D_CALENDARIO[Data_ref]; -6; MONTH ) )
+							)
