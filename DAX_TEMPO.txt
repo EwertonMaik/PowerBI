@@ -12,3 +12,5 @@ Em uma dada coluna de mês abreviado / ano º, foi criado a partir desta coluna,
 
 YOY - YEAR OVER YEAR - Ano sobre Ano
 17 VAL YOY = CALCULATE([01 Vendas Valid]; SAMEPERIODLASTYEAR(D_CALENDARIO[Data_ref]) )
+19 VAL MON = CALCULATE([01 Vendas Valid]; PREVIOUSMONTH(D_CALENDARIO[Data_ref]) ) -- Mês anterior
+20 VAL MES SEGUINTE = CALCULATE([01 Vendas Valid]; NEXTMONTH(D_CALENDARIO[Data_ref]) ) -- Mês Seguinte
