@@ -40,3 +40,12 @@
 NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 
 ▶ POWERBI - PERMITE MUITAS POSSIBILIDADES DE TRANSFORMAR OS DADOS, INDEPENDENTE SE A FONTE DE DADOS ESTIVER NORMALIZADA OU DESNORMALIZADA. COM FUNCIONALIDADE PARA CRIAR E GERAR CHAVES PARA O RELACIONAMENTOS DA TABELAS.
+
+▶ 4 TIPOS DE FILTROS POWERBI
+1 - Filtro de Página
+2 - Filtro de Visual
+3 - Filtro de Relatório/ Todas Páginas
+4 - Filtro de Detalhamento
+
+Filtro de Detalhamento (Drill Through) - Possibilita integrar a visualização de dados filtrados entre painéis diversos
+Outro recurso bem útil é a Segmentação / sincronização de dados. Aba Exibição / Segmentação de dados de sincronização.
