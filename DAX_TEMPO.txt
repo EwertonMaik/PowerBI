@@ -37,3 +37,14 @@ YOY - YEAR OVER YEAR - Ano sobre Ano
 -- Exemplos abaixo utilizam parâmetro de variável para simular o percentual de crescimento de vendas
 24 Simula Vendas = [01 Vendas Valid] * P_SIMULA[P_SIMULA Valor]
 25 Simula Vendas = ([01 Vendas Valid] * P_SIMULA[P_SIMULA Valor]) + [01 Vendas Valid]
+
+-- Utilizando vaviáveis para calcular diferença de variação
+26 % MON =
+-- VALOR CONTEXTO ATUAL
+	VAR V_VAL_ATUAL = CALCULATE([01 Vendas Valid])
+-- VALOR CONTEXTO MODIFICADO
+	VAR V_VAL_ANTERIOR = CALCULATE([01 Vendas Valid]; PREVIOUSMONTH(D_CALENDARIO[Data_ref]))
+-- CALCULO
+VAR V_CALC = DIVIDE(V_VAL_ATUAL; V_VAL_ANTERIOR) - 1
+RETURN
+IF(V_VAL_ANTERIOR = BLANK(); BLANK(); V_CALC)
