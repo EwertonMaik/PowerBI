@@ -33,3 +33,7 @@ YOY - YEAR OVER YEAR - Ano sobre Ano
 								DATESINPERIOD(D_CALENDARIO[Data_ref];
 								LASTDATE(D_CALENDARIO[Data_ref]; P_MES_ACUM[P_MES_ACUM Valor] * -1; MONTH ) )
 							)
+
+-- Exemplos abaixo utilizam parâmetro de variável para simular o percentual de crescimento de vendas
+24 Simula Vendas = [01 Vendas Valid] * P_SIMULA[P_SIMULA Valor]
+25 Simula Vendas = ([01 Vendas Valid] * P_SIMULA[P_SIMULA Valor]) + [01 Vendas Valid]
