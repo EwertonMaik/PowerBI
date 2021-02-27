@@ -54,3 +54,5 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ Filtro de Detalhamento (Drill Through) - Possibilita integrar a visualização de dados filtrados entre painéis diversos. Outro recurso bem útil é a Segmentação / sincronização de dados. Aba Exibição / Segmentação de dados de sincronização.
 
 ▶ OBJETO P & R - Utiliza de recursos de inteligência artificial para criar perguntas e respostas para os dados.
+
+▶ FUNÇÔES RLS - Possui recurso de gerenciamento de perfis de acesso aos dados. Permite criar tais funções que restringe e filtra o acesso aos dados para cada usuário.
