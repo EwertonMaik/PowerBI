@@ -58,3 +58,11 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ FUNÇÔES RLS - Possui recurso de gerenciamento de perfis de acesso aos dados. Permite criar tais funções que restringe e filtra o acesso aos dados para cada usuário.
 
 ▶ Storytelling / Indicadores / Bookmarks - Recurso que permite criar uma linha de tempo, em destaques, focando nos objetos que deseja apresentar e focar.
+
+▶ Recurso de reaproveitar os dados já publicados na nuvem, podendo ser baixados localmente no PowerBI Desktop, porém não pode ser editado o modelo de dados, apenas reutilizado para criar novas visualizações.
+
+▶ Recurso de baixar do PowerBi service, os dados em Planilha Excel, PDF ou PowerPoint, recurso pode ser liberado individualmente para cada usuário!
+
+▶ Uma conta gratuita no PowerBI service, disponibiliza de 10 GB para o usuário armazenar dados.
+
+▶ Recurso pelo PowerBI Service - Gestão de Links Publicos e Privados. Os paines com acesso aos dados, podekm ser compartilhados com outros usuários, que podem acessar via um link publico ou privado. Esses acessos podem ser liberados e removidos com a administração do PowerBi Service.
