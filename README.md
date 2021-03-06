@@ -66,3 +66,5 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ Uma conta gratuita no PowerBI service, disponibiliza de 10 GB para o usuário armazenar dados.
 
 ▶ Recurso pelo PowerBI Service - Gestão de Links Publicos e Privados. Os paines com acesso aos dados, podekm ser compartilhados com outros usuários, que podem acessar via um link publico ou privado. Esses acessos podem ser liberados e removidos com a administração do PowerBi Service.
+
+▶ O PowerBI e o SharePoint são 2 produtos distintos da Microsoft que possui integração, pelo PowerBi é possivel gerar e disponibilizar links de um painel que pode ser visualizado dentro do SharePoint ao criar uma pagina e adiciona-lo.
