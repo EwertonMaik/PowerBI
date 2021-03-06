@@ -56,3 +56,5 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ OBJETO P & R - Utiliza de recursos de inteligência artificial para criar perguntas e respostas para os dados.
 
 ▶ FUNÇÔES RLS - Possui recurso de gerenciamento de perfis de acesso aos dados. Permite criar tais funções que restringe e filtra o acesso aos dados para cada usuário.
+
+▶ Storytelling / Indicadores / Bookmarks - Recurso que permite criar uma linha de tempo, em destaques, focando nos objetos que deseja apresentar e focar.
