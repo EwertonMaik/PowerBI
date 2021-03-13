@@ -14,6 +14,8 @@ MAXX = MAXX(Tabela; Expressão)
 MINX = MINX(Tabela; Expressão)
 COUNTX = COUNTX(Tabela; Expressão)
 
+fDados_Completa = UNION(fDados;f_2018) -- Usando UNION para criar uma nova tabela que junta dados de duas tabelas distintas
+
 COUNT - =COUNT(Coluna) - Conta quantos números tem em uma coluna
 COUNTA - =COUNTA(Coluna) - Conta quantos valores tem em uma coluna
 COUNTBLANK - =COUNTBLANK(Coluna) - Conta quantos valores vazio tem em uma coluna
