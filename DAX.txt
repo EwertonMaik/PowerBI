@@ -15,6 +15,7 @@ MINX = MINX(Tabela; Expressão)
 COUNTX = COUNTX(Tabela; Expressão)
 
 fDados_Completa = UNION(fDados;f_2018) -- Usando UNION para criar uma nova tabela que junta dados de duas tabelas distintas
+_Medidas = {1} - Criando uma tabela para adicionar todas as minhas medidas / colunas calculadas
 
 COUNT - =COUNT(Coluna) - Conta quantos números tem em uma coluna
 COUNTA - =COUNTA(Coluna) - Conta quantos valores tem em uma coluna
