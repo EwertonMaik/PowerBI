@@ -52,6 +52,8 @@ Mês/Ano = FORMAT(D_CALENDARIO[Data_ref];'mmmm/yyyy') -- Criando coluna personal
 1 Idade -DATEDIFF(PESSOAS[Nascimento];TODAY();MONTH) -- Criando culuna para calcular idade das pessoas por MÊS
 É possivel por HOUR / MINUTE / QUARTER / SECOND / WEEK
 
+Calendario = CALENDARAUTO() -- Função DAX que criar uma coluna para a tabela automaticamente com todas dadas de inicio e fim que o modelo possui
+
 # PorwerBI permite criar uma Hierarquia de datas automaticamente e manualmente, adicionando uma data, e as demais variações de colunas criadas para esta data, como dia, mês, trimestre, semestre.
 
 # O PowerBI permite a ordenação dos dados de calendário de forma crescente e descresente para dia, mês, ano e demais classificação de datas.
