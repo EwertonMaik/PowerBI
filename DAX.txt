@@ -162,3 +162,15 @@ ALLSELECTED(FVendas) -- Remove filtros de contexto de colunas e linhas na consul
 15 Valor Meta = CALCULATE(SUM(Fato_venda[Valor_meta] ) )
 16 % Meta = DIVIDE([06 Vendas C/ Vnd]; [15 Val Meta]; 0)
 16 % Rest = IF(1 - [16 % Meta] < 0; 0; 1 - [16 % Meta] )
+
+-- DAXSTUDIO
+-- CALCULANDO PERCENTUAL DO TOTAL DE - VENDAS
+Soma de Vendas = SUM(fVendas[Valor]) -- Medida que soma todas as vendas e sofre atualização do valor conforme o filtro selecionado
+
+Soma Todas Vendas = CALCULATE([Soma de Vendas]; ALL(fVendas) ) -- Medida que soma todas as vendas e não sofre atualização de filtro selecionado, pois usa ALL
+
+% Total = DIVIDE([Soma de Vendas]; [Soma Todas Vendas]; BLANK() ) -- Medida que Divide a (Soma de Vendas) que aceita seleção de filtro, pela (Soma Todas Vendas), que não aceita seleção de filtro. 
+
+
+
+
