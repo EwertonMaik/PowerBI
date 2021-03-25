@@ -171,6 +171,10 @@ Soma Todas Vendas = CALCULATE([Soma de Vendas]; ALL(fVendas) ) -- Medida que som
 
 % Total = DIVIDE([Soma de Vendas]; [Soma Todas Vendas]; BLANK() ) -- Medida que Divide a (Soma de Vendas) que aceita seleção de filtro, pela (Soma Todas Vendas), que não aceita seleção de filtro. 
 
+-- CALCULANDO PERCENTUAL COM FILTRO SELEÇÃO
+Soma Vendas Selecionadas = CALCULATE([Soma de Vendas]; ALLSELECTED(fVendas) ) -- Media que soma todas as venda, e sofre atualização conforme os filtros selecionados.
 
+
+% Total Selecionado = DIVIDE([Soma de Vendas]; [Soma Vendas Selecionadas]; Blank() ) -- Medida que divide a (Soma de Vendas) pela (Soma Vendas Selecionadas), ambas medidas possuem atualização conforme filtros selecionados.
 
 
