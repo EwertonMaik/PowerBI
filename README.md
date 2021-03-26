@@ -72,4 +72,10 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
 https://download.databinteligencia.com.br/arquivo/0043-PBI-KL-Indicadores-Economicos-Brasil-Dolar-Parte-1
 https://ead.databinteligencia.com.br/
-
+TESTAR UTILIZAÇÃO DE FILTRO - DRILL THROUGH
+TESTAR SEGMENTAÇÃO / SINCRONIZAÇÃO
+TESTAR DICA DE FERRAMENTA - IR em configuração de Página e Habilitar/ E no objeto desejado Dica de Ferramenta
+flaticon.com
+ALM Toolkit, DAX Studio, Tabular Editor
+Criar botões com link - Usar indicadores / Exibição / Painel de Indicadores
+Tamanho da Página 16:9
