@@ -68,14 +68,3 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ Recurso pelo PowerBI Service - Gestão de Links Publicos e Privados. Os paines com acesso aos dados, podekm ser compartilhados com outros usuários, que podem acessar via um link publico ou privado. Esses acessos podem ser liberados e removidos com a administração do PowerBi Service.
 
 ▶ O PowerBI e o SharePoint são 2 produtos distintos da Microsoft que possui integração, pelo PowerBi é possivel gerar e disponibilizar links de um painel que pode ser visualizado dentro do SharePoint ao criar uma pagina e adiciona-lo.
-
-https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
-https://download.databinteligencia.com.br/arquivo/0043-PBI-KL-Indicadores-Economicos-Brasil-Dolar-Parte-1
-https://ead.databinteligencia.com.br/
-TESTAR UTILIZAÇÃO DE FILTRO - DRILL THROUGH
-TESTAR SEGMENTAÇÃO / SINCRONIZAÇÃO
-TESTAR DICA DE FERRAMENTA - IR em configuração de Página e Habilitar/ E no objeto desejado Dica de Ferramenta
-flaticon.com
-ALM Toolkit, DAX Studio, Tabular Editor
-Criar botões com link - Usar indicadores / Exibição / Painel de Indicadores
-Tamanho da Página 16:9
