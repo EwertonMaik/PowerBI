@@ -1,0 +1,26 @@
+## - Site do Banco central que disponibiliza API com acesso aos dados de cotação do Dollar diária e por períodos
+https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios
+
+Trabalhando com a Variação do Dollar, PCA, SELIC, IGPM
+## Quando quero comprar um dollar, uso a cotação de venda
+## Quando quero vender um dollar, uso a cotação de compra 
+
+Media Dollar = AVAREGE(Dolar[cotacaoVenda])
+Calendario = CALENDARAUTO() -- Pega desde a primeira até última data que existe no modelo de dados
+
+Variacao Mes Anterior =
+VAR MesAnterior = CALCULATE([Media Dolar]; DATEADD(Calendario[Data]; -1; MONTH))
+RETURN IF([Meida Dolar] <> 0 && MesAnterior <> 0; DIVIDE([Media Dolar]; MesAnterior; 0) -1; BLANK() )
+
+Ultima Cotacao = MAX(Dolar[dataHoraCotacao])
+
+Valor Ultima Cotacao = CALCULATE([Media Dolar]; FILTER(Dolar; Dolar[dataHoraCotacao] = MAX(Dolar[dataHoraCotacao]) ))
+
+Variacao Absoluta Dolar = 
+VAR MesAnterior = CALCULATE([Media Dolar]; DATEADD(Calendario[Data]; -1; MONTH) )
+RETURN [Media Dolar] - MesAnterior
+
+-- Histórico da taxa SELCIC
+## - www.bcb.gov.br/Pec/Copom/Port/taxaSelic.asp#
+SELIC (Sistema Especial de Liquidação e Custódia) - Média ajustada diária dos financiamentos entre bancos
+Selic Over e Selic Meta
