@@ -177,4 +177,7 @@ Soma Vendas Selecionadas = CALCULATE([Soma de Vendas]; ALLSELECTED(fVendas) ) --
 
 % Total Selecionado = DIVIDE([Soma de Vendas]; [Soma Vendas Selecionadas]; Blank() ) -- Medida que divide a (Soma de Vendas) pela (Soma Vendas Selecionadas), ambas medidas possuem atualização conforme filtros selecionados.
 
-
+-- Função USERELATIONSHIP, usada para relacionar uma coluna de uma tabela, com a coluna de outra tabela. Importante que as tabelas tenham ao mínimo, um relacionamento desativado.
+-- Função não retorna nenhum valor, usada para relacionar os registros que tem relação e realizar cálculos e operações.
+USERELATIONSHIP(TabelaA[coluna01], TabelaB[coluna02]);
+= CALCULATE(SUM(InternetSales[SalesAmount]), USERELATIONSHIP(InternetSales[ShippingDate], DateTime[Date]))
