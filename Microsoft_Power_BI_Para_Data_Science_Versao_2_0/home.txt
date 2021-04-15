@@ -1,4 +1,5 @@
 --Anotações - Begin 14/04/2021
+Curso Denso, com muito Conteúdo (Padrão DSA)
 
 1 - Introdução
 2 - Primeiros Passos com Power BI Desktop
@@ -10,3 +11,13 @@
 8 - Microsoft Power BI Mobile
 9 - Microsoft Power BI e Google Analytics
 10 - Visualização de Dados de Banco de Dados Relacionais
+11 - Estatística Fundamental Para Data Science
+12 - Linguagem R e Power BI Para Análise Estatística
+13 - Linguagem Python e Power BI Para Manipulação de Dados
+14 - Microsoft Power BI e Apache Spark
+15 - Análise de Dados e Machine Learning
+16 - SQL Analytics
+17 - Power Automate
+18 - Power Virtual Agents
+19 - Power Apps
+20 - Projeto Final - Data Lake, Dremio e Power BI
