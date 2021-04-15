@@ -1,1 +1,12 @@
---Anotações
+--Anotações - Begin 14/04/2021
+
+1 - Introdução
+2 - Primeiros Passos com Power BI Desktop
+3 - Business Intelligence mo Power BI
+4 - Modelagem e Relacionamento
+5 - Séries Temporais, Agregação e Filtros
+6 - Gráficos e Mapas
+7 - Dashboards Interativos
+8 - Microsoft Power BI Mobile
+9 - Microsoft Power BI e Google Analytics
+10 - Visualização de Dados de Banco de Dados Relacionais
