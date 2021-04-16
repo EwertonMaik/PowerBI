@@ -1,5 +1,10 @@
 --Anotações - Begin 14/04/2021
 Curso Denso, com muito Conteúdo (Padrão DSA)
+Dados - Informação - Conhecimento - Inteligência
+1 - alta velocidade
+2 - alto volume
+3 - variedade
+4 - veridico
 
 1 - Introdução
 2 - Primeiros Passos com Power BI Desktop
