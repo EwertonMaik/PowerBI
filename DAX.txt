@@ -181,3 +181,8 @@ Soma Vendas Selecionadas = CALCULATE([Soma de Vendas]; ALLSELECTED(fVendas) ) --
 -- Função não retorna nenhum valor, usada para relacionar os registros que tem relação e realizar cálculos e operações.
 USERELATIONSHIP(TabelaA[coluna01], TabelaB[coluna02]);
 = CALCULATE(SUM(InternetSales[SalesAmount]), USERELATIONSHIP(InternetSales[ShippingDate], DateTime[Date]))
+
+-- Exemplo abaixo usando CALCULATE e DIVIDE + MAX
+-- A medida calcula a média para cada mês automaticamente, pegando o mês referênte ao faturamento total
+calculo_media_automatico_por_mes = CALCULATE(DIVIDE([fat_total], MAX(d_calendario[mes]), BLANK() ) )
+
