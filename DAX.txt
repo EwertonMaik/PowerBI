@@ -186,3 +186,8 @@ USERELATIONSHIP(TabelaA[coluna01], TabelaB[coluna02]);
 -- A medida calcula a média para cada mês automaticamente, pegando o mês referênte ao faturamento total
 calculo_media_automatico_por_mes = CALCULATE(DIVIDE([fat_total], MAX(d_calendario[mes]), BLANK() ) )
 
+RankX = Rankx(All(Vendasd[Produto]); [Vendas]; ; DESC)
+
+Vendas ACC = CALCULATE([Vendas]; TOPN([Rank]; All(Vendas[Produto]); [Vendas]; DESC ) )
+
+%% ACC = [Vendas ACC] / CALCULATe([Vendas]; ALL(Vendas[Produto]) )
