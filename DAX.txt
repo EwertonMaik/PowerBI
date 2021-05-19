@@ -186,8 +186,19 @@ USERELATIONSHIP(TabelaA[coluna01], TabelaB[coluna02]);
 -- A medida calcula a média para cada mês automaticamente, pegando o mês referênte ao faturamento total
 calculo_media_automatico_por_mes = CALCULATE(DIVIDE([fat_total], MAX(d_calendario[mes]), BLANK() ) )
 
-RankX = Rankx(All(Vendasd[Produto]); [Vendas]; ; DESC)
-
+-- Exemplo de utilização da Função RANKS
+-- É usado para gerar um classificação, um ranqueamento de um conjunto de dados de uma tabela
+Rankx(All(Vendasd[Produto]); [Vendas]; ; DESC)
 Vendas ACC = CALCULATE([Vendas]; TOPN([Rank]; All(Vendas[Produto]); [Vendas]; DESC ) )
-
 %% ACC = [Vendas ACC] / CALCULATe([Vendas]; ALL(Vendas[Produto]) )
+
+-- Exemplo de aplicação de Variáveis, RANKX, IF e ISINSCOPE para ranquear valores dentro de um Visual de Grafico Colunas de Barras
+
+Recentemente utilizei a Função RANKX para gerar um classificação de 1º, 2º, 3º... para um grupo registro em uma tabela. A função atendeu perfeitamente!
+Porém precisei criar uma medida para ranqueamento / classificação dentro de um Gráfico Visual de Barras que faz Drill Down e Drill Up em três niveis.
+E está função RANKX apenas, não funciona e gera a classificação em todos os níveis corretamente, em resumo apenas um nível que chega de gerar a classificação correta,
+e nos demais não. Isso porque a função RANKX é necessário informar a tabela e as colunas que fará parte do ranqueamento.
+Para que a função RANKX funcionasse corretamente dentro de um Grafico Visual de Barras com Drill Down e Drill Up, tive que desenvolver um medida usando 3 variáveis,
+onde cada uma recebia o cálculo de RANKX para uma determinada situação do Nivel no Visual de Gráfico de Barras.
+E usando uma estrutura IF, e em especial a função ISINSCOPE para verificar em qual escopo, em qual nivél esta do Gráfico de Visual de Barras.
+Assim, usando o IF, verifico com ISINSCOPE em qual nível das colunas o Gráfico esta, e é chamado e executado a váriavel da respectiva função RANKX.
