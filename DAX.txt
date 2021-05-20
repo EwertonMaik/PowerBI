@@ -202,3 +202,10 @@ Para que a função RANKX funcionasse corretamente dentro de um Grafico Visual d
 onde cada uma recebia o cálculo de RANKX para uma determinada situação do Nivel no Visual de Gráfico de Barras.
 E usando uma estrutura IF, e em especial a função ISINSCOPE para verificar em qual escopo, em qual nivél esta do Gráfico de Visual de Barras.
 Assim, usando o IF, verifico com ISINSCOPE em qual nível das colunas o Gráfico esta, e é chamado e executado a váriavel da respectiva função RANKX.
+
+rank_nivel_prod = 
+    VAR V_01 = RANKX(ALLSELECTED(d_prod[linha_receita]), [item_fat_bruto_notas])
+    VAR V_02 = RANKX(ALLSELECTED(d_prod[linha_receita], d_prod[segmento_mercado] ),  [item_fat_bruto_notas] )
+    VAR V_03 = RANKX(ALLSELECTED(d_prod[linha_receita], d_prod[segmento_mercado], d_prod[cod_item] ),  [item_fat_bruto_notas] )
+    RETURN
+    IF(ISINSCOPE(d_prod[linha_receita]) = TRUE(), V_01, IF(ISINSCOPE(d_prod[segmento_mercado]) = TRUE(), V_02, IF(ISINSCOPE(d_prod[cod_item]) = TRUE(), V_03) ) )
