@@ -68,3 +68,13 @@ NO FLOCO DE NEVE É POSSUIVEL VER O NÍVEL DE GRANULARIDADE DA INFORMAÇÃO.
 ▶ Recurso pelo PowerBI Service - Gestão de Links Publicos e Privados. Os paines com acesso aos dados, podekm ser compartilhados com outros usuários, que podem acessar via um link publico ou privado. Esses acessos podem ser liberados e removidos com a administração do PowerBi Service.
 
 ▶ O PowerBI e o SharePoint são 2 produtos distintos da Microsoft que possui integração, pelo PowerBi é possivel gerar e disponibilizar links de um painel que pode ser visualizado dentro do SharePoint ao criar uma pagina e adiciona-lo.
+
+▶ Variáveis Power BI
+
+1 - Cada variável é avaliada uma única vez antes do RETURN do cálculo.
+
+2 - As variáveis são executadas nos contextos iniciais de filtro e linha (Filter e Row Context).
+
+3 - Variáveis podem ser utilizadas por outras variáveis: Na mesma fórmula (medida) e Desde que declarada anterior à Variavel Atual.
+
+4 - Depois que a variável tiver recebido um valor, esse valor não poderá ser alterado durante a execução da parte RETURN da fórmula.
