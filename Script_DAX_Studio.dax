@@ -1,0 +1,72 @@
+﻿-- Agrupa Total de Faturamento mensal e do mesmo periodo do ano anterior por Mês/ano, código cliente e nome cliente
+EVALUATE
+SUMMARIZECOLUMNS(
+    d_calendario[mes/ano],
+    f_fat_item[cliente],
+    --d_cliente[nom_cliente],
+    FILTER(d_calendario,
+    	   d_calendario[ano] = 2021 &&
+    	   d_calendario[mes] = 11),
+    FILTER(f_fat_item,
+    	   f_fat_item[representante] = 50),
+    "Fat. Bruto Atual", [item_fat_bruto_notas_x],
+    "Fat. Bruto Ano Ant.", [item_fat_bruto_mesmo_periodo]
+)
+ORDER BY 
+    [item_fat_bruto_notas_x] DESC--,
+    --d_calendario[mes/ano] ASC,
+    --f_fat_item[cliente] ASC,
+    --d_cliente[nom_cliente] ASC
+/* END QUERY BUILDER */
+
+
+-- Todos os valores distintos da tabela f_fat_item / coluna - cliente
+EVALUATE VALUES(f_fat_item[cliente])
+
+-- Todos os valores distintos da tabela f_fat_item / coluna - cliente
+EVALUATE DISTINCT(f_fat_item[cliente])
+
+-- Filtra a tabela f_fat_item onde todos registros possuem representante = 50
+EVALUATE CALCULATETABLE( f_fat_item, f_fat_item[representante] = 50)
+
+-- Todos os registros da tabela cliente que começam com a letra R da coluna nom_cliente
+EVALUATE CALCULATETABLE( VALUES(d_cliente[nom_cliente]), LEFT(d_cliente[nom_cliente], 1) = "R")
+
+-- Definindo uma Medida para Calculo do Fat. Bruto ANO
+DEFINE
+MEASURE f_fat_item[val_bruto_item] = SUM(f_fat_item[val_bruto_item])
+EVALUATE ADDCOLUMNS( VALUES(d_calendario[ano]), "Fat. Bruto", [val_bruto_item] )
+
+-- Definindo uma 2 Medidas para Calculo do Fat. Bruto e Liquido ANO
+DEFINE
+	MEASURE f_fat_item[val_bruto_item]   = SUM(f_fat_item[val_bruto_item])
+	MEASURE f_fat_item[val_liquido_item] = sum(f_fat_item[val_liquido_item])
+EVALUATE ADDCOLUMNS(
+	VALUES(d_calendario[ano]),
+	"Fat. Bruto",   [val_bruto_item],
+	"Fat. Liquido", [val_liquido_item]
+)
+
+EVALUATE SUM(f_fat_item[val_bruto_item]) -- Obten erro ao executar
+EVALUATE { SUM(f_fat_item[val_bruto_item]) } -- Corrigindo erro usado a sintaxe de table constructor
+EVALUATE ROW("Fat Bruto", [capa_fat_bruto_notas] ) -- Obtendo o mesmo valor que query anterior com a funcao ROW
+
+-- Definindo uma medida e retornando a execução desta medida
+DEFINE MEASURE f_fat_item[val_bruto_item] = SUM(f_fat_item[val_bruto_item])
+EVALUATE { [val_bruto_item] }
+
+-- Retornando registros de duas tabelas (aparece aba 1 e 2 referente a cada consulta)
+EVALUATE d_cliente
+EVALUATE d_empresa
+
+-- Definindo em um unico bloco duas medidas e o retorno destas duas medidas
+DEFINE
+	MEASURE f_fat_item[val_bruto_item]   = SUM(f_fat_item[val_bruto_item])
+	MEASURE f_fat_item[val_liquido_item] = sum(f_fat_item[val_liquido_item])
+EVALUATE { [val_bruto_item] }
+EVALUATE { [val_liquido_item] }
+
+-- Definindo parametros de entrada em uma consulta DAX
+EVALUATE FILTER( f_fat_item, f_fat_item[representante] = 84 ) -- SEM PARAMETRO
+EVALUATE FILTER( f_fat_item, f_fat_item[representante] = @par) -- COM PARAMETRO
+
