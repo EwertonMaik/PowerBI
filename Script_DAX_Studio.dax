@@ -70,3 +70,17 @@ EVALUATE { [val_liquido_item] }
 EVALUATE FILTER( f_fat_item, f_fat_item[representante] = 84 ) -- SEM PARAMETRO
 EVALUATE FILTER( f_fat_item, f_fat_item[representante] = @par) -- COM PARAMETRO
 
+-- Função SUMX - Contexto de Linha
+-- Recebe como parâmetro, uma tabela e uma expressão, para o parâmetro de tabela, é passado uma tabela já filtrada com a função FILTER
+-- E no parâmetro da expressão, é passado a estrutura condicional IF para a coluna com expressão que será calculada cada linha e somada
+=SUMX (
+	FILTER (
+	VALUES ( 'Date'[Year] ),
+	'Date'[Year] < 2005
+	),
+	IF (
+		'Date'[Year] >= 2000,
+		[Sales Amount] * 100,
+		[Sales Amount] * 90
+	)
+)
