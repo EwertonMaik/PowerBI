@@ -84,3 +84,5 @@ EVALUATE FILTER( f_fat_item, f_fat_item[representante] = @par) -- COM PARAMETRO
 		[Sales Amount] * 90
 	)
 )
+-- Exemplo simples, Iterando a tabela Sales, e para cada registro, realizando a MULTIPLICAÇÂO(Sales[Price] * Sales[Quantity]) antes de SOMAR
+SUMX ( Sales, Sales[Price] * Sales[Quantity])
