@@ -94,3 +94,9 @@ RETURN
 IF (
 	TotalQuantity > 1000,	TotalQuantity * 0.95,	TotalQuantity * 1.25
 )
+
+-- Realizando operação de soma iterativa para cada registro, porém filtrando anteriormente
+SUMX (
+	FILTER ( Orders, Orders[Price] > 1 ),
+	Orders[Quantity] * Orders[Price]
+)
