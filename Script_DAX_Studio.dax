@@ -100,3 +100,6 @@ SUMX (
 	FILTER ( Orders, Orders[Price] > 1 ),
 	Orders[Quantity] * Orders[Price]
 )
+
+-- Função Conta o Total de linhas, porém para apenas cada valor distinto da tabela Product
+NumOfProducts := COUNTROWS ( DISTINCT ( Product[ProductCode] ) )
