@@ -103,3 +103,9 @@ SUMX (
 
 -- Função Conta o Total de linhas, porém para apenas cada valor distinto da tabela Product
 NumOfProducts := COUNTROWS ( DISTINCT ( Product[ProductCode] ) )
+
+-- Conta o total de registros da tabela relacionada Product
+NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
+
+-- Conta o total de registros da tabela relacionada Product, baseado no filtro de quando a cor é vermelho
+NumOfRedProducts = COUNTROWS ( FILTER ( RELATEDTABLE ( Product ), Product[Color] = "Red" ) )
