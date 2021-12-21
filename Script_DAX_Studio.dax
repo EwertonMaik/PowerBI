@@ -109,3 +109,7 @@ NumOfProducts = COUNTROWS ( RELATEDTABLE ( Product ) )
 
 -- Conta o total de registros da tabela relacionada Product, baseado no filtro de quando a cor é vermelho
 NumOfRedProducts = COUNTROWS ( FILTER ( RELATEDTABLE ( Product ), Product[Color] = "Red" ) )
+
+-- Calculate
+NumOfBigSales :=
+	CALCULATE ( SUM ( Sales[SalesAmount] ), Sales[SalesAmount] > 100 )
