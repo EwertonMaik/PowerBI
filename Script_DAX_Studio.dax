@@ -113,3 +113,17 @@ NumOfRedProducts = COUNTROWS ( FILTER ( RELATEDTABLE ( Product ), Product[Color]
 -- Calculate
 NumOfBigSales :=
 	CALCULATE ( SUM ( Sales[SalesAmount] ), Sales[SalesAmount] > 100 )
+
+-- Duas Medidas com mesmo objetivo Lógico
+CALCULATE (
+		SUM ( Sales[SalesAmount] ),
+		Sales[SalesAmount] > 100
+)
+
+CALCULATE (
+		SUM ( Sales[SalesAmount] ),
+		FILTER (
+			ALL ( Sales[SalesAmount] ),
+			Sales[SalesAmount] > 100
+			)
+)
